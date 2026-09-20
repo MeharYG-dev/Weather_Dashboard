@@ -9,10 +9,14 @@ import "./SearchWeather.css";
 function SearchWeather({ onSearch, onLocation }) {
   const [city, setCity] = useState("");
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
-    onSearch(city);
+    const success = await onSearch(city);
+
+    if (success) {
+      setCity("");
+    }
   };
 
   return (

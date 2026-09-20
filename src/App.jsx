@@ -63,7 +63,7 @@ function App() {
   const getWeatherByCity = async (city) => {
     if (!city.trim()) {
       setError("Please enter a city name.");
-      return;
+      return false;
     }
 
     setLoading(true);
@@ -88,8 +88,14 @@ function App() {
       setWeather(data);
 
       saveRecentSearch(data.name);
+
+      // Search was successful
+      return true;
     } catch (error) {
       setError(error.message);
+
+      // Search failed
+      return false;
     } finally {
       setLoading(false);
     }
