@@ -16,8 +16,12 @@ function SearchWeather({ onSearch, onLocation }) {
   };
 
   return (
-    <Form onSubmit={handleSubmit} className="search-weather-form">
+    <Form
+      onSubmit={handleSubmit}
+      className="search-weather-form"
+    >
       <InputGroup className="search-input-group">
+
         <InputGroup.Text>
           <i className="bi bi-search"></i>
         </InputGroup.Text>
@@ -26,7 +30,9 @@ function SearchWeather({ onSearch, onLocation }) {
           type="text"
           placeholder="Enter city name..."
           value={city}
-          onChange={(event) => setCity(event.target.value)}
+          onChange={(event) =>
+            setCity(event.target.value)
+          }
         />
 
         <Button
@@ -46,6 +52,7 @@ function SearchWeather({ onSearch, onLocation }) {
           <i className="bi bi-geo-alt-fill"></i>
           Location
         </Button>
+
       </InputGroup>
     </Form>
   );

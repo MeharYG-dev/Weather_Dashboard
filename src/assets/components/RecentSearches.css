@@ -1,0 +1,99 @@
+.recent-searches-card {
+  margin-top: 25px;
+
+  border: none !important;
+  border-radius: 20px !important;
+
+  background: rgba(255, 255, 255, 0.9);
+
+  box-shadow:
+    0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.recent-searches-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+}
+
+.recent-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.recent-title i {
+  font-size: 1.3rem;
+  color: #2563eb;
+}
+
+.recent-title h5 {
+  margin: 0;
+
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.clear-button {
+  display: flex !important;
+  align-items: center;
+  gap: 6px;
+
+  border-radius: 8px !important;
+}
+
+.recent-cities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.city-button {
+  display: flex !important;
+  align-items: center;
+  gap: 6px;
+
+  padding: 8px 15px !important;
+
+  border: 1px solid #dbeafe !important;
+  border-radius: 50px !important;
+
+  background: #eff6ff !important;
+  color: #2563eb !important;
+
+  font-weight: 500 !important;
+
+  transition: all 0.3s ease !important;
+}
+
+.city-button:hover {
+  background: #2563eb !important;
+  color: #ffffff !important;
+
+  transform: translateY(-2px);
+}
+
+.dark-mode .recent-searches-card {
+  background: #1e293b;
+}
+
+.dark-mode .recent-title h5 {
+  color: #ffffff;
+}
+
+.dark-mode .city-button {
+  background: #334155 !important;
+  border-color: #475569 !important;
+
+  color: #bfdbfe !important;
+}
+
+@media (max-width: 576px) {
+  .recent-searches-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+}

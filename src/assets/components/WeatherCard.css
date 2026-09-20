@@ -1,0 +1,168 @@
+.weather-card {
+  margin-top: 25px;
+
+  border: none !important;
+  border-radius: 24px !important;
+
+  background: rgba(255, 255, 255, 0.9);
+
+  box-shadow:
+    0 20px 50px rgba(15, 23, 42, 0.1);
+
+  overflow: hidden;
+
+  transition: all 0.3s ease;
+}
+
+.weather-card:hover {
+  transform: translateY(-4px);
+}
+
+.weather-city {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 30px;
+}
+
+.weather-city i {
+  font-size: 1.5rem;
+  color: #2563eb;
+}
+
+.weather-city h2 {
+  margin: 0;
+
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  color: #1e293b;
+}
+
+.temperature-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather-icon {
+  width: 150px;
+  height: 150px;
+}
+
+.temperature {
+  margin-bottom: 5px;
+
+  font-size: 4rem;
+  font-weight: 800;
+
+  color: #2563eb;
+}
+
+.weather-description {
+  margin: 0;
+
+  font-size: 1.1rem;
+  color: #64748b;
+}
+
+.weather-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  border-left: 1px solid #e2e8f0;
+  padding-left: 40px;
+}
+
+.weather-detail-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.weather-detail-item i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+
+  border-radius: 14px;
+
+  background: #eff6ff;
+  color: #2563eb;
+
+  font-size: 1.4rem;
+}
+
+.weather-detail-item div {
+  display: flex;
+  flex-direction: column;
+}
+
+.weather-detail-item span {
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.weather-detail-item strong {
+  font-size: 1.1rem;
+  color: #1e293b;
+}
+
+.dark-mode .weather-card {
+  background: rgba(30, 41, 59, 0.95);
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .weather-city h2,
+.dark-mode .weather-detail-item strong {
+  color: #ffffff;
+}
+
+.dark-mode .weather-description,
+.dark-mode .weather-detail-item span {
+  color: #cbd5e1;
+}
+
+.dark-mode .weather-details {
+  border-left-color: #334155;
+}
+
+.dark-mode .weather-detail-item i {
+  background: #334155;
+}
+
+@media (max-width: 768px) {
+  .weather-details {
+    border-left: none;
+    border-top: 1px solid #e2e8f0;
+
+    padding-left: 0;
+    padding-top: 25px;
+  }
+
+  .temperature-section {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 576px) {
+  .weather-icon {
+    width: 120px;
+    height: 120px;
+  }
+
+  .temperature {
+    font-size: 3rem;
+  }
+
+  .weather-city h2 {
+    font-size: 1.2rem;
+  }
+}

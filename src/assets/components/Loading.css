@@ -1,0 +1,21 @@
+.loading-container {
+  text-align: center;
+  padding: 60px 20px;
+
+  color: #64748b;
+}
+
+.loading-spinner {
+  margin-bottom: 15px;
+}
+
+.loading-spinner .spinner-border {
+  width: 3rem;
+  height: 3rem;
+
+  color: #2563eb;
+}
+
+.dark-mode .loading-container {
+  color: #cbd5e1;
+}
