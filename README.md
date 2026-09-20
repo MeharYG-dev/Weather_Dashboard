@@ -6,7 +6,7 @@ The application allows users to search for weather information by city, view wea
 
 ---
 
-## Screenshot
+
 
 ![Weather Dashboard Screenshot](https://github.com/MeharYG-dev/Weather_Dashboard/blob/main/src/Weather_dashboard.png
 )
