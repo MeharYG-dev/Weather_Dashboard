@@ -1,16 +1,32 @@
-# React + Vite
+# 🌤️ Weather Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive Weather Dashboard built with **React, Vite, React Bootstrap, Bootstrap Icons, and the OpenWeather API**.
 
-Currently, two official plugins are available:
+The application allows users to search for weather information by city, view weather based on their current location, access recent searches, and switch between light and dark modes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 📌 Project Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The Weather Dashboard provides real-time weather information through a clean and responsive interface.
 
-## Expanding the ESLint configuration
+Users can:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🔍 Search weather by city name
+- 📍 Get weather using their current location
+- 🌡️ View current temperature
+- 🌤️ View weather conditions and weather icons
+- 💧 View humidity
+- 💨 View wind speed
+- 🌡️ View "Feels Like" temperature
+- 🕘 Access recently searched cities
+- 🗑️ Clear recent searches
+- 🌙 Switch between Light Mode and Dark Mode
+- ⏳ View a loading state while weather data is being fetched
+- ⚠️ Receive clear error messages for invalid cities or API errors
+- 📱 Use the application on desktop, tablet, and mobile devices
+
+
+
+
+
